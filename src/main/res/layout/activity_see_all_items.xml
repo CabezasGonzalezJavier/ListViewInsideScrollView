@@ -1,0 +1,82 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_detail_ScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context="com.thedeveloperworldisyours.pureconnect.Acitvites.DetailAcitivity">
+
+    <RelativeLayout
+        style="@style/AppTheme.Relative"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:id="@+id/activity_see_all_items_relative_layout"
+            style="@style/AppTheme.Relative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <ImageView
+                android:id="@+id/activity_see_all_items_icon"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="5dp"
+                android:contentDescription="TODO"
+                android:scaleType="centerCrop"/>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/activity_see_all_items_icon"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/activity_see_all_items_firstLine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="26sp"
+                    android:text="@string/activity_see_all_items_the_developer_world_is_yours"/>
+
+                <TextView
+                    android:id="@+id/activity_see_all_items_secondLine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:text="@string/activity_see_all_items_the_developer_world_is_yours"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/activity_see_all_items_description"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/activity_see_all_items_relative_layout"
+            android:layout_marginTop="5dp"
+            android:background="@color/white"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:textSize="18sp"
+            android:text="@string/activity_see_all_items_example"/>
+
+
+        <com.thedeveloperworldisyours.listviewinsidescrollview.view.NonScrollListView
+            android:id="@+id/activity_see_all_items_listView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/activity_see_all_items_description"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="5dp"
+            android:background="@color/white" />
+    </RelativeLayout>
+</ScrollView>
