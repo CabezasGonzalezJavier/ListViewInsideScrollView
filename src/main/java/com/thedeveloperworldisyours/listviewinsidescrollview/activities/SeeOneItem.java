@@ -7,9 +7,12 @@ import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.ListView;
 
+import com.squareup.picasso.Picasso;
 import com.thedeveloperworldisyours.listviewinsidescrollview.R;
+import com.thedeveloperworldisyours.listviewinsidescrollview.view.CircleTransform;
 
 public class SeeOneItem extends ActionBarActivity {
 
@@ -17,6 +20,9 @@ public class SeeOneItem extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_scroll_list_view);
+
+        ImageView imageView = (ImageView) findViewById(R.id.activity_scroll_list_view_icon);
+        Picasso.with(this).load(getString(R.string.activity_see_all_items_image)).transform(new CircleTransform()).into(imageView);
 
         ListView listView = (ListView) findViewById(R.id.activity_scroll_list_view_listView);
         String[] values = getResources().getStringArray(R.array.items_list_view);

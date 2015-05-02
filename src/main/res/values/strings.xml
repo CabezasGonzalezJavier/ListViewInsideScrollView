@@ -14,7 +14,7 @@
         <item>Nine</item>
         <item>Ten</item>
     </string-array>
-    <string name="activity_see_all_items_the_developer_world_is_yours">The Developer world is yours.</string>
+    <string name="activity_see_all_items_the_developer_world_is_yours">TheDeveloperWorldIsYours.com</string>
     <string name="activity_see_all_items_image">"http://www.polyvore.com/cgi/img-thing?.out=jpg&amp;size=l&amp;tid=38520818"</string>
     <string name="activity_see_all_items_example">this is example about ListView inside ScrollView, this is example about ListView inside ScrollView, this is example about ListView inside ScrollView, this is example about ListView inside ScrollView, this is example about ListView inside ScrollView, this is example about ListView inside ScrollView, this is example about ListView inside ScrollView, this is example about ListView inside ScrollView, this is example about ListView inside ScrollView, this is example about ListView inside ScrollView, this is example about ListView inside ScrollView, this is example about ListView inside ScrollView, this is example about ListView inside ScrollView, this is example about ListView inside ScrollView, this is example about ListView inside ScrollView, this is example about ListView inside ScrollView.</string>
     <string name="title_activity_see_all_items">SeeAllItemsActivity</string>

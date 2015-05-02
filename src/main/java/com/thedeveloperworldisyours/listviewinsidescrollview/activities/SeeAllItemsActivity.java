@@ -9,6 +9,7 @@ import android.widget.TextView;
 
 import com.squareup.picasso.Picasso;
 import com.thedeveloperworldisyours.listviewinsidescrollview.R;
+import com.thedeveloperworldisyours.listviewinsidescrollview.view.CircleTransform;
 
 
 public class SeeAllItemsActivity extends ActionBarActivity {
@@ -19,8 +20,7 @@ public class SeeAllItemsActivity extends ActionBarActivity {
         setContentView(R.layout.activity_see_all_items);
         ListView listView = (ListView) findViewById(R.id.activity_see_all_items_listView);
         ImageView imageView = (ImageView) findViewById(R.id.activity_see_all_items_icon);
-        Picasso.with(SeeAllItemsActivity.this).load("http://i.imgur.com/DvpvklR.png").into(imageView);
-//        Picasso.with(this).load(getString(R.string.activity_main_image)).transform(new CircleTransform()).into(imageView);
+        Picasso.with(this).load(getString(R.string.activity_see_all_items_image)).transform(new CircleTransform()).into(imageView);
 
         String[] values = getResources().getStringArray(R.array.items_list_view);
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
