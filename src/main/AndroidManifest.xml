@@ -21,7 +21,7 @@
             android:label="@string/title_activity_see_all_items" >
         </activity>
         <activity
-            android:name=".activities.ScrollListViewActivity"
+            android:name=".activities.SeeOneItem"
             android:label="@string/title_activity_scroll_list_view" >
         </activity>
     </application>

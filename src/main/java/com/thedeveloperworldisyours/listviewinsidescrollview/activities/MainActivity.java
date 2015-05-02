@@ -7,7 +7,6 @@ import android.view.View;
 import android.widget.Button;
 
 import com.thedeveloperworldisyours.listviewinsidescrollview.R;
-import com.thedeveloperworldisyours.listviewinsidescrollview.activities.SeeAllItemsActivity;
 
 
 public class MainActivity extends ActionBarActivity implements View.OnClickListener {
@@ -30,7 +29,7 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
     }
 
     public void goToScrollListView(){
-        Intent intent = new Intent(this, ScrollListViewActivity.class);
+        Intent intent = new Intent(this, SeeOneItem.class);
         startActivity(intent);
     }
 
