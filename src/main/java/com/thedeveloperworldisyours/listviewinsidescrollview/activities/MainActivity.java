@@ -20,6 +20,8 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         seeAllItems.setOnClickListener(this);
         Button scrollListView = (Button) findViewById(R.id.activity_main_button_scroll_list_view);
         scrollListView.setOnClickListener(this);
+        Button expandableListView = (Button) findViewById(R.id.activity_main_button_expandable_list_view);
+        expandableListView.setOnClickListener(this);
 
     }
 
@@ -33,6 +35,11 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         startActivity(intent);
     }
 
+    public void goToExpandableListView(){
+        Intent intent = new Intent(this, ExpandableListViewActivity.class);
+        startActivity(intent);
+    }
+
     @Override
     public void onClick(View v) {
         switch (v.getId()){
@@ -41,6 +48,9 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
                 break;
             case R.id.activity_main_button_scroll_list_view:
                 goToScrollListView();
+                break;
+            case R.id.activity_main_button_expandable_list_view:
+                goToExpandableListView();
                 break;
         }
 

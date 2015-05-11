@@ -26,6 +26,10 @@
             android:name=".activities.SeeOneItem"
             android:label="@string/title_activity_scroll_list_view" >
         </activity>
+        <activity
+            android:name=".activities.ExpandableListViewActivity"
+            android:label="@string/title_activity_expandable_list_view" >
+        </activity>
     </application>
 
 </manifest>

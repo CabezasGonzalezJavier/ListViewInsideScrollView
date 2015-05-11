@@ -47,6 +47,14 @@
 
         </RelativeLayout>
 
+        <ListView
+            android:id="@+id/activity_scroll_list_view_listView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/activity_scroll_list_view_relative_layout"
+            android:layout_marginTop="5dp"
+            android:background="@color/white" />
+
 
         <TextView
             android:id="@+id/activity_scroll_list_view_description"
@@ -61,15 +69,5 @@
             android:textSize="18sp" />
 
 
-        <ListView
-            android:id="@+id/activity_scroll_list_view_listView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_below="@+id/activity_scroll_list_view_relative_layout"
-            android:layout_centerVertical="true"
-            android:layout_marginTop="5dp"
-            android:background="@color/white" />
     </RelativeLayout>
 </ScrollView>
