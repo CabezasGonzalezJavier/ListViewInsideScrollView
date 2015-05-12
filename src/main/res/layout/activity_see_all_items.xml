@@ -44,29 +44,27 @@
 
         </RelativeLayout>
 
-
-        <TextView
-            android:id="@+id/activity_see_all_items_description"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_below="@+id/activity_see_all_items_relative_layout"
-            android:layout_marginTop="5dp"
-            android:background="@color/white"
-            android:paddingLeft="5dp"
-            android:paddingRight="5dp"
-            android:text="@string/activity_see_all_items_example"
-            android:textSize="18sp" />
-
-
         <com.thedeveloperworldisyours.listviewinsidescrollview.view.NonScrollListView
             android:id="@+id/activity_see_all_items_listView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
-            android:layout_below="@+id/activity_see_all_items_description"
+            android:layout_below="@+id/activity_see_all_items_relative_layout"
             android:layout_centerVertical="true"
             android:layout_marginTop="5dp"
             android:background="@color/white" />
+
+        <TextView
+            android:id="@+id/activity_see_all_items_description"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/activity_see_all_items_listView"
+            android:layout_marginTop="5dp"
+            android:background="@color/white"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="@string/activity_see_all_items_example"
+            android:textSize="18sp" />
     </RelativeLayout>
 </ScrollView>
