@@ -1,5 +1,7 @@
 # About
 This is Android - ListView inside ScrollView.
+**[You'll find the supporting medium article for this project here!](http://thedeveloperworldisyours.com/android/expandable-listview-inside-scrollview/#sthash.26PIYTQ1.dpbs)**
+
 
 # Requirements
 
